@@ -199,3 +199,56 @@ ul li:not(:last-child) {
   outline: none;
   border: none;
 }
+
+@media (min-width: 769px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-form {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .signup-form.success {
+    display: block;
+    padding: initial;
+  }
+
+  .content {
+    margin: 2rem 0.5rem;
+  }
+
+  .content h1 {
+    font-size: 3.5rem;
+  }
+
+  .successmsg {
+    max-width: 400px;
+    display: none;
+    border-radius: 1.5rem;
+  }
+
+  .successmsg.active {
+    max-width: 400px;
+    display: block;
+  }
+
+  .successmsg img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .successmsg h1 {
+    margin-bottom: 1rem;
+  }
+
+  .successmsg p {
+    margin-bottom: 1rem;
+  }
+}
