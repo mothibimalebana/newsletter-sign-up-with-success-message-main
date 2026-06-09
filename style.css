@@ -154,3 +154,48 @@ ul li:not(:last-child) {
     rgb(229, 40, 15) 70%
   );
 }
+
+.successmsg {
+  max-width: 375px;
+  background-color: var(--clr-background);
+  padding: 2rem;
+  color: var(--clr-Dark-Slate-Grey);
+  display: none;
+}
+
+.successmsg.active {
+  display: block;
+}
+
+.successmsg img {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.successmsg h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: var(--fw-bold);
+}
+
+.successmsg p {
+  margin-bottom: 15rem;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.btn2 {
+  width: 100%;
+  background-color: var(--clr-Dark-Slate-Grey);
+  color: var(--clr-background);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
