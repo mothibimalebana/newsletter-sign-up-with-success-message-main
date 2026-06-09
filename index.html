@@ -16,17 +16,14 @@
   <body>
     <!-- sign up form -->
     <section class="signup-form" id="signup-form">
-      <picture class="img" id="right">
-        <source
-          class="img-desk"
-          media="(min-width: 769px)"
-          srcset="./assets/images/illustration-sign-up-desktop.svg"
-        />
-        <img
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="illustration-sign-up-mobile"
-        />
-      </picture>
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        srcset="./assets/images/illustration-sign-up-desktop.svg 1024w"
+        sizes="(min-width: 769px) 50vw, 100vw"
+        alt="Sign up illustration"
+        class="img"
+        id="right"
+      />
 
       <div class="content" id="left">
         <h1>Stay updated!</h1>
