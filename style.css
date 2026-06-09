@@ -44,3 +44,113 @@ input,button {
 p,h1,h2 {
   overflow-wrap: break-word;
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--clr-background);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-Charcoal-Grey);
+  font-weight: var(--fw-rgl);
+  font-size: var(--font);
+  font-family: var(--ff);
+}
+
+.signup-form {
+  background-color: var(--clr-background);
+  max-width: 375px;
+  color: var(--clr-Dark-Slate-Grey);
+}
+
+.signup-form.success {
+  display: initial;
+  padding: 3.5rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.signup-form h1 {
+  font-weight: var(--fw-bold);
+  font-size: 2.5rem;
+}
+
+.signup-form p {
+  margin: 1rem 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+ul li:not(:last-child) {
+  align-items: start;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  font-size: 12px;
+  font-weight: var(--fw-bold);
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-item label .error-email {
+  color: var(--clr-primary-tomato);
+  display: none;
+}
+
+.form-item label .error-email.active {
+  display: block;
+}
+
+.form-item input, .form-item button {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.form-item input {
+  border: 1px solid var(--clr-Grey);
+}
+
+.form-item input.active {
+  background-color: rgba(255, 98, 87, 0.2);
+  border: 1px solid var(--clr-primary-tomato);
+}
+
+.btn1 {
+  background-color: var(--clr-Dark-Slate-Grey);
+  color: var(--clr-background);
+  font-weight: var(--fw-bold);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn1:hover, .btn2:hover {
+  background: linear-gradient(
+    127deg,
+    rgba(255, 63, 124, 1) 40%,
+    rgb(229, 40, 15) 70%
+  );
+}
